@@ -1,0 +1,242 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Website Layout</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color:#9368E9;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+font-family:"trebuchet MS";
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #E3F6DF;
+  color: black;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  padding: 15px;
+}                                                      
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 25%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: red;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color:#A869C8;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color:gray;
+}
+</style>
+</head>
+<body >
+<h2 style="text-align:center; font-family:trebuchet MS;">DEVELOPERS</h2>
+<br>
+<div class="topnav">
+ <a href="#">Home</a>
+ <a href="#">Map</a>
+  <a href="#">Developers</a>
+<a href="#">Credits</a>
+<a href="www.google.com" style="float:right">Logout</a>
+</div>
+
+<br>
+<center>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="rutuimg.png" alt="RUTUPARNA" style="width:50%;height:50%;padding:1px" >
+      <div class="container">
+        <h2 style="font-family:trebuchet MS;">RUTUPARNA PATKAR</h2>     
+        <p><b>TEAM LEAD</b><br><b>Backend</b></br>40006027</p>
+
+        <p style="color:blue;">Rutuparna.KetanPatkar@Ltts.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="ankitaimg.png" alt="ANKITA TAYADE" style="width:50%;height:50%;padding:1px">
+      <div class="container">
+        <h2 style="font-family:trebuchet MS;">ANKITA TAYADE</h2>
+<p></p>
+        <p><b>Backend</b></p>
+<p>40006147</p>      
+  <p style="color:blue;">Ankita.JanardhanTayade@Ltts.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="column">
+    <div class="card">
+      <img src="tejasimg.png" alt="TEJAS" style="width:50%;height:50%;padding:1px">
+      <div class="container">
+<br>
+        <h2 style="font-family:trebuchet MS;">TEJAS DHEBE</h2>
+
+        <p><b>Backend</b></p>
+        <p>40006024</p>
+        <p style="color:blue;">Tejas.GopinathDhebe@Ltts.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+<div class="column">
+    <div class="card">
+      <img src="ashimg.png" alt="AISHWARYA P" style="width:50%;height:50%;padding:1px" >
+      <div class="container">
+        <h2 style="font-family:trebuchet MS;">AISHWARYA P</h2>
+        <p><b>Frontend</b></p>
+<p>40006068</p>
+        <p style="color:blue;">P.Aishwarya@Ltts.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+
+
+  <div class="column">
+    <div class="card">
+      <img src="ashishimg.png" alt="ASHISH K" style="width:50%;height:50%;padding:1px">
+      <div class="container">
+        <h2 style="font-family:trebuchet MS;">ASHISH K</h2>
+        <p><b>Frontend</b></p>
+<p>40006069</p>      
+  <p style="color:blue;">Ashish.k@Ltts.com</p>
+<p></p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="nowamiimg.png" alt="NOWAMI"style="width:50%;height:50%;padding:1px">
+      <div class="container">
+        <h2 style="font-family:trebuchet MS;">NOWAMI M</h2>
+        <p><b>Frontend</b></p>
+        <p>40006124</p>
+        <p style="color:blue;">Nowami.Muktapuram@Ltts.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+<div class="column">
+    <div class="card">
+      <img src="rumanimg.png" alt="RUMAN PASHA" style="width:50%;height:50%;padding:25px">
+      <div class="container">
+<br>
+        <h2 style="font-family:trebuchet MS;">RUMAN PASHA</h2>
+        <p><b>Frontend</b></p>
+        <p>40006053</p>
+        <p style="color:blue;">Ruman.Pasha@Ltts.com</p>
+<p></p>
+        <p style="color:blue;"><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+</div>
+</center>
+</body>
+</html>
+
+

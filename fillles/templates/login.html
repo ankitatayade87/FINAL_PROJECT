@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+  font-size: 17px;
+}
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+}
+
+.content {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+.content1 {
+  position: relative;
+  
+  color: #f1f1f1;
+  width: 100%;
+  
+}
+
+.container {
+  position: absolute;
+  right: 0;
+  margin: 20px;
+  max-width: 300px;
+  padding: 16px;
+color:white;
+
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit button */
+.btn {
+  background-color: #21D11E;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+
+
+</style>
+</head>
+<body>
+
+<video autoplay muted loop id="myVideo">
+  <source src="/static/raiin.mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+
+<div class="content">
+  <h1 style="text-align:center;">POWER DISTRIBUTION SYSTEM</h1>
+</div>
+<form method="POST" action="" class="container">
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<h1>Login</h1>
+
+    <label for="Username"><b>Email</b></label>
+    <input type="text" placeholder="Enter name" name="userid" onfocus="this.value=''"  value="{{
+          request.form.userid }}">
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" onfocus="this.value=''" value="{{
+          request.form.psw }}">
+
+     <input class="btn btn-default" type="submit" value="Login">
+	 
+
+ 
+  </form>
+  
+	  {% if error %}
+<div class="content1">
+        <p class="error" style="text-align:center;"><strong>Error:</strong> {{ error }}
+		
+</div> 
+ {% endif %}
+  
+</div>
+
+
+</body>
+</html>

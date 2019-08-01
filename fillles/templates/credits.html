@@ -1,0 +1,181 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+body {
+  background-color: #A4F1F9;
+}
+
+/* Popup container - can be anything you want */
+.popup {
+position:relative;
+  display:inline-block;
+
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+}
+
+/* The actual popup */
+.popup .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
+.bg-img {
+  /* The image used */
+ color:black;
+  min-height: 780px;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+div.transbox {
+ background-image: url("geo.jpg");
+  background-color: #E9E8E8;
+  
+   margin: 3% 35% 5% 35%;
+  opacity: 3.6;
+  filter: alpha(opacity=60); /* For IE8 and earlier */
+}
+
+div.transboxr {
+ 
+
+  background-color:#9D9C9C;
+  border: 1px solid black;
+
+  opacity: 1.6;
+  filter: alpha(opacity=60); /* For IE8 and earlier */
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+/* Style the header */
+.header {
+  background-color: #ffffff;
+  padding: 2px;
+  text-align: center;
+font-family:"Trebuchet MS";
+
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #9368E9;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 11px 11px;
+  text-decoration: none;
+font-family:"trebuchet MS";
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color:#E3F6DF;
+  color: black;
+}
+
+<title>CSS Website Layout</title>
+
+
+</style>
+</head>
+<div class="bg-img">
+
+<body bgcolor= #E9E8E8 style="text-align:center;">
+<h1 style="font-family:trebuchet MS;">Credits</h1>
+<div class="topnav">
+ <a href="file:///C:/Users/user/Desktop/link/home.html">Home</a>
+ <a href="#">Map</a>
+  <a href="file:///C:/Users/user/Desktop/link/developer.html">Developers</a>
+<a href="file:///C:/Users/user/Desktop/link/credit.html">Credits</a>
+<a href="file:///C:/Users/user/Desktop/link/login.html" style="float:right;">Logout</a>
+</div>
+
+
+<script>
+// When the user clicks on div, open the popup
+function myFunction() {
+  var popup = document.getElementById("myPopup");
+  popup.classList.toggle("show");
+}
+</script>
+<img src="me.gif" alt="hi" style="width:100px;height:100px;"><br>
+
+<div class="transbox">
+<marquee behavior="scroll" direction="up" scrollamount="5" style="font-family:arial;font-size:170%;text-align:center">L&T TECHNOLOGY SERVICES<br>UTL TECHNOLOGIES<br>Shanthanu<br>Shaik Saifulla<br>Rutuparana Patkar<br>Anikta Tayade<br>Tejas Dhebe<br>Aishwarya P<br>Ashish K<br>Nowami M<br>Ruman Pasha<br><br><br><b>THANK YOU</b></marquee>
+
+</div>
+
+
+</body>
+</html>
+
+
+
