@@ -37,6 +37,18 @@ mydb = myclient["MY_FIRST_DATABASE"]
 def home():
 
     return render_template('home.html')
+@app.route("/dashboard")
+def demo():
+    
+    return render_template('dash.html',
+    Residential_Demand=request.args.get('Residential_Demand'),
+    Industrial_Demand=request.args.get('Industrial_Demand'),
+    Agricultural_Demand=request.args.get('Agricultural_Demand'),
+    Residential_Manage=request.args.get('Residential_Manage'),
+    Industrial_Manage=request.args.get('Industrial_Manage'), 
+    Agricultural_Manage=request.args.get('Agricultural_Manage'),
+    time=request.args.get('time'),
+    h =request.args.get('h'))
 
 
 @app.route("/credits")
