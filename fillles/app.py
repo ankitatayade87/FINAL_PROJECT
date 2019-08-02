@@ -103,15 +103,15 @@ def dashboard():
      array1.insert(3,int(R))
      r = PLANT_CAPACITY - int(R)
      R1=int(R)
-     A1 = r
-     I1 = 0
+     A1 = 0
+     I1 = r
 
     elif (I > R) and (I > A):
        array1.insert(3,int(I))
        r = PLANT_CAPACITY - int(I)
        I1 = int(I)
-       R1 = r
-       A1 = 0
+       R1 = r/2
+       A1 = r/2
     
     else:
 
